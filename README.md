@@ -1,0 +1,2 @@
+# nxtequal.xyz
+Personal site
