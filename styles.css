@@ -1,128 +1,82 @@
-body {
-    background-image: url("Assets/bg.jpg");
-    background-size: 1080px; 
-    font-family: "Quantico", lato, calibri, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    text-shadow: 0px 0px 1px #bbb;
-    color: #222;
-    letter-spacing: 1px;
-    line-height: 13px;
-}
+
 
 ul {
     list-style-image: url("Assets/play.png");
-    list-style
 }
 
-#container {
-    position: absolute;
-  display: flex;
-  align-items: center;
+.container {
     width: 700px;
 }
 
-#left {
-    width: 300px;
-    background: #eee url();
-    margin: 0px;
-    margin-top: 0px;
-    padding: 0px;
-    border: 0px solid #666;
-}
-
-#content {
-    width: 500px;
-    background: #eee url();
-    margin: 0px;
-    margin-top: 0px;
-    padding: 0px;
-    border: 0px solid #666;
-}
-
-.box {
-    background: #d4d0c8;
-    border-left: 2px solid #39af47;
-    border-right: 2px solid #39af47;
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #666;
-    padding: 4px;
-    margin-bottom: 4px;
-}
-
-#header {
-    text-align: left;
-    color: #ec1212;
-    background: #d4d0c8;
-    font-size: 40px;
-    letter-spacing: 2px;
-    padding-left: 4px;
-    border-left: 2px solid #39af47;
-    border-right: 2px solid #39af47;
-    border-bottom: 2px solid #39af47;
-    border-top: 2px solid #666;
-    line-height: 10px;
-    width: 600px;
-    height: 90px;
-    line-height: 90px;
+.header {
+    text-align: center;
+    background-color: #d4d0c8;
+    padding: 20px 0;
+    vertical-align: center;
+    line-height: 50px;
+    border: 1px solid #39af47;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    font-family: 'Jersey 10';
-    position:relative;
+    color: #ec1212;
+    font-size: 40px;
+    letter-spacing: 2px;
+    max-height: 90px;
+    font-family: "Jersey 10";
 }
 
-::selection {
-  /* (Text highlighted by the user) */
-  background: white;
+.header a {
+    text-decoration: none;
+    color: #ec1212;
 }
 
 .siteurl {
-    text-align: left;
-    color: #000;
-    background: #d4d0c8;
-    letter-spacing: 2px;
-    padding-left: 4px;
-    border-left: 2px solid #39af47;
-    border-right: 2px solid #39af47;
-    border-bottom: 2px solid #39af47;
-    border-top: 2px solid #666;
-    line-height: 10px;
-    width: 600px;
-    height: 15px;
-    line-height: 15px;
+    background-color: white;
+    margin-top: 5px;
+    border: 1px solid grey;
+    padding: 2px;
 }
 
-#navigation {
-    position: absolute;
-    width: 100%;
-    background: none;
-        color: #14d52a;
-}
 .navi {
-    float: left;
+    display: inline;
+    color: #14d52a;
+    text-align: center;
+    text-transform: uppercase;
+    width: 700px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+ul.navi {
     display: block;
-    font:
-        9px arial black,
-        calibri;
-    border-left: 2px solid #39af47;
+    list-style-type: none;
+    width: auto;
+}
+
+li.navi {
+    list-style-type: none;
+    background: #2b1258;
+    padding: 5px;
+    border-left: 2px solid grey;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-    border-top: 2px solid #39f470;
-    margin-right: 4px;
-    padding: 5px;
-    min-width: 80px;
-    text-align: center;
-    background: #2b1258;
-    text-transform: uppercase;
+    border-top: 2px solid grey;
+    width: auto;
+}
+
+.navi a {
     color: #14d52a;
 }
 
-#navi {
-        color: #14d52a;
+.navi a:hover {
+    color: white;
+    background: #6a49a5;
 }
 
-a.navi {
-    color: #14d52a;
+a:hover {
+    background: white;
 }
 
 .title {
@@ -130,26 +84,61 @@ a.navi {
         9px arial #14d52a bold,
         calibri;
     text-transform: uppercase;
-    font-weight:bold;
+    font-weight: bold;
     color: #14d52a;
-    background: #e3f4e2
-        url(Assets/banner.png);
+    background: #e3f4e2 url(Assets/banner.png);
+    background-size: 100%;
     letter-spacing: 3px;
     padding-left: 4px;
-    border-bottom: 1px solid #fff;
+    border: 1px solid black;
+    border-bottom: 0;
     padding-top: 2px;
+    padding-bottom: 2px;
 }
 
-a:link,
-a:visited,
-a:active {
-    color: #214cdd;
-    text-decoration: underline;
+img.cross {
+    float:right;
+    margin-right: 4px;
 }
 
-a:hover {
-    color: #ffffff;
+.box {
+    border: 1px solid #14d52a;
+    background-color: #d4d0c8;
+    margin-bottom: 5px;
+    padding: 5px;
 }
+
+.sidebar {
+    margin-top: 5px;
+    padding: 0;
+    width: 210px;
+}
+
+.content {
+    position: absolute;
+    width: 482px;
+    left: 240px;
+}
+
+body {
+    padding: 1rem;
+    background-image: url("Assets/bg.jpg");
+    background-size: 1080px;
+    font-family: "Quantico", lato, calibri, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-shadow: 0 0 1px #bbb;
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 13px;
+}
+
+h1 {
+    font-family: "Jersey 10", monospace;
+    letter-spacing: 3px;
+}
+
+/*fonts */
 
 .quantico-regular {
     font-family: "Quantico", sans-serif;
@@ -175,45 +164,7 @@ a:hover {
     font-style: italic;
 }
 .jersey-10-regular {
-  font-family: "Jersey 10", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Layout */
-
-
-.layout {
-  width: 600px;
-  display: grid;
-  grid-gap: var(--margin);
-  grid-template: "header header" auto "leftSidebar main" auto "footer footer" auto / var(--sidebar-width) auto;
-  /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
-}
-
-main {
-  grid-area: main;
-  overflow-y: auto;
-  padding: var(--padding);
-  background: var(--content-background-color);
-  border: var(--border);
-  border-radius: var(--round-borders);
-}
-
-
-.two-columns {
-  display: flex;
-}
-
-.two-columns > * {
-  flex: 1 1 0;
-  margin: 0;
-}
-
-.two-columns > *:first-child {
-  padding-right: 0.75em;
-}
-
-.two-columns > *:last-child {
-  padding-left: 0.75em;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }

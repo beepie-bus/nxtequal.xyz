@@ -1,0 +1,218 @@
+body {
+    background-image: url("Assets/bg.jpg");
+    background-size: 1080px; 
+    font-family: "Quantico", lato, calibri, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-shadow: 0 0px 1px #bbb;
+    color: #222;
+    letter-spacing: 1px;
+    line-height: 13px;
+}
+
+ul {
+    list-style-image: url("Assets/play.png");
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #214cdd;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+#container {
+    position: absolute;
+  display: flex;
+  align-items: center;
+    width: 700px;
+}
+
+#left {
+    width: 300px;
+    background: #eee url();
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    border: 0px solid #666;
+}
+
+#content {
+    width: 500px;
+    background: #eee url();
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    border: 0px solid #666;
+}
+
+.box {
+    background: #d4d0c8;
+    border-left: 2px solid #39af47;
+    border-right: 2px solid #39af47;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #666;
+    padding: 4px;
+    margin-bottom: 4px;
+}
+
+#header {
+    text-align: left;
+    color: #ec1212;
+    background: #d4d0c8;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-left: 4px;
+    border-left: 2px solid #39af47;
+    border-right: 2px solid #39af47;
+    border-bottom: 2px solid #39af47;
+    border-top: 2px solid #666;
+    width: 600px;
+    height: 90px;
+    line-height: 90px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Jersey 10';
+    position:relative;
+}
+
+::selection {
+  /* (Text highlighted by the user) */
+  background: white;
+}
+
+.siteurl {
+    text-align: left;
+    color: #000;
+    background: #d4d0c8;
+    letter-spacing: 2px;
+    padding-left: 4px;
+    border-left: 2px solid #39af47;
+    border-right: 2px solid #39af47;
+    border-bottom: 2px solid #39af47;
+    border-top: 2px solid #666;
+    line-height: 10px;
+    width: 600px;
+    height: 15px;
+    line-height: 15px;
+}
+
+#navigation {
+    position: absolute;
+    width: 100%;
+    background: none;
+        color: #14d52a;
+}
+.navi {
+    float: left;
+    display: block;
+    font:
+        9px arial black,
+        calibri;
+    border-left: 2px solid #39af47;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid #39f470;
+    padding: 5px;
+    min-width: 80px;
+    text-align: center;
+    background: #2b1258;
+    text-transform: uppercase;
+    color: #14d52a;
+    width:700px;
+}
+
+#navi {
+        color: #14d52a;
+}
+
+a.navi {
+    color: #14d52a;
+}
+
+.title {
+    font:
+        9px arial #14d52a bold,
+        calibri;
+    text-transform: uppercase;
+    font-weight:bold;
+    color: #14d52a;
+    background: #e3f4e2
+        url(Assets/banner.png);
+    letter-spacing: 3px;
+    padding-left: 4px;
+    border-bottom: 1px solid #fff;
+    padding-top: 2px;
+}
+
+
+.quantico-regular {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quantico-bold {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.quantico-regular-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.quantico-bold-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Layout */
+
+
+.layout {
+  width: 600px;
+  display: grid;
+  grid-gap: var(--margin);
+  grid-template: "header header" auto "leftSidebar main" auto "footer footer" auto / var(--sidebar-width) auto;
+  /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
+}
+
+main {
+  grid-area: main;
+  overflow-y: auto;
+  padding: var(--padding);
+  background: var(--content-background-color);
+  border: var(--border);
+  border-radius: var(--round-borders);
+}
+
+
+.two-columns {
+  display: flex;
+}
+
+.two-columns > * {
+  flex: 1 1 0;
+  margin: 0;
+}
+
+.two-columns > *:first-child {
+  padding-right: 0.75em;
+}
+
+.two-columns > *:last-child {
+  padding-left: 0.75em;
+}
