@@ -116,9 +116,8 @@ img.cross {
 }
 
 .content {
-    position: absolute;
     width: 482px;
-    left: 240px;
+    float: right;
 }
 
 body {
